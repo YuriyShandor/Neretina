@@ -169,7 +169,6 @@ header {
   width: 100%;
   -webkit-box-shadow: 0 0px 75px 0px #efeded;
   box-shadow: 0 0px 75px 0px #efeded;
-  margin-bottom: 5000px;
 }
 
 header .header-block .neretina__logo {
@@ -213,5 +212,69 @@ header .header-block .neretina__logo {
   }
   .header-nav_fixed {
     padding: 0 0px;
+  }
+}
+
+footer {
+  width: 100%;
+  -webkit-box-shadow: 0 -35px 75px 0px #efeded;
+  box-shadow: 0 -35px 75px 0px #efeded;
+  margin-top: 300px;
+}
+
+footer .footer-block {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+footer .footer-block span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+}
+
+footer .footer-block span a {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #d4d4d4;
+  -webkit-transition: all, .3s;
+  transition: all, .3s;
+}
+
+footer .footer-block span a:hover {
+  border-bottom: 1px solid #000;
+}
+
+@media only screen and (max-width: 991px) {
+  footer .footer-block {
+    padding: 30px 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  footer .footer-block {
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px 0;
+  }
+  footer .footer-block span {
+    margin-top: 10px;
+    text-align: center;
+    width: 90%;
   }
 }
