@@ -83,7 +83,6 @@
 
 @media only screen and (max-width: 991px) {
   .header-nav {
-    position: relative;
     display: -ms-flex;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -215,11 +214,123 @@ header .header-block .neretina__logo {
   }
 }
 
+.neretina-form {
+  padding: 50px 0;
+  border: 1px solid #000;
+  margin-bottom: 50px;
+}
+
+.neretina-form h1 {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: Warnock;
+  font-size: 30px;
+  font-weight: 500;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.neretina-form__mailing input {
+  width: 100%;
+  height: 60px;
+  border: 1px solid #e3e3e3;
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #959595;
+  outline-color: #000;
+}
+
+.neretina-form__mailing a {
+  height: 60px;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  background: #000;
+  border: 1px solid #000;
+  -webkit-transition: all, .7s;
+  transition: all, .7s;
+}
+
+.neretina-form__mailing a:hover {
+  color: #000;
+  background: #fff;
+}
+
+@media only screen and (max-width: 991px) {
+  .neretina-form {
+    padding: 40px 0;
+    margin-bottom: 40px;
+  }
+  .neretina-form h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  .neretina-form__mailing input {
+    height: 40px;
+  }
+  .neretina-form__mailing a {
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .neretina-form {
+    padding: 35px 0;
+    margin-bottom: 35px;
+  }
+  .neretina-form h1 {
+    text-align: center;
+  }
+  .neretina-form__mailing input {
+    height: 40px;
+    margin-left: 20px;
+  }
+  .neretina-form__mailing a {
+    height: 40px;
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .neretina-form {
+    padding: 35px 0;
+    margin-bottom: 35px;
+  }
+  .neretina-form h1 {
+    font-size: 18px;
+  }
+  .neretina-form__mailing {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .neretina-form__mailing input {
+    height: 40px;
+    margin-left: 0px;
+  }
+  .neretina-form__mailing a {
+    height: 40px;
+    margin-right: 0px;
+    margin-top: 15px;
+  }
+}
+
 footer {
   width: 100%;
-  -webkit-box-shadow: 0 -35px 75px 0px #efeded;
-  box-shadow: 0 -35px 75px 0px #efeded;
-  margin-top: 300px;
+  -webkit-box-shadow: 0 -7px 20px 0px #efeded;
+  box-shadow: 0 -7px 20px 0px #efeded;
 }
 
 footer .footer-block {
