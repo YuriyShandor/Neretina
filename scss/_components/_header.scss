@@ -1,0 +1,88 @@
+@import "./_nav-bar.scss";
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  //border: 1px solid red;
+}
+
+body {
+  font-family: Gotham, Arial sans-serif;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header {
+  width: 100%;
+  -webkit-box-shadow: 0 0px 75px 0px #efeded;
+          box-shadow: 0 0px 75px 0px #efeded;
+
+  margin-bottom: 5000px;
+
+  .header-block {
+    .neretina__logo {
+      display: none;
+    }
+  }
+}
+
+.header-nav_default {
+  position: relative;
+  z-index: 10;
+}
+
+.header-nav_fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 50px;
+  -webkit-box-shadow: 0 0px 75px 0px #efeded;
+          box-shadow: 0 0px 75px 0px #efeded;
+  height: 92px * 0.8;
+}
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+  header {
+    .header-block {
+      .neretina__logo {
+        display: inline-block;
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .header-nav_fixed {
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  .header-nav_fixed {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width : 575px) {
+  header {
+    .header-block {
+      .neretina__logo {
+        width: 125px;
+      }
+    }
+  }
+
+  .header-nav_fixed {
+    padding: 0 0px;
+  }
+}
