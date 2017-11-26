@@ -5,7 +5,100 @@
 @import "./_components/_neretina-form__mailing.scss";
 @import "./_components/_footer.scss";
 
+.article-heading {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
+  &__image {
+    img {
+      margin-left: -15px;
+      width: 100%;
+    }
+  }
+
+  &__info {
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: -115px;
+
+    &-block {
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+
+      span {
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-family: Warnock;
+        font-size: 80px;
+        font-weight: 400;
+      }
+
+      .divider {
+        width: 160px;
+        height: 1px;
+        background: #000;
+      }
+
+      p {
+        margin: 0;
+        margin-top: 30px;
+        margin-left: 100px;
+        width: 75%;
+        font-size: 24px;
+        font-weight: 400;
+      }
+
+      .more-about-me {
+        margin-left: 100px;
+        margin-top: 40px;
+        width: 270px;
+        height: 60px;
+        display: -ms-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        cursor: pointer;
+        color: #000;
+        background: #fff;
+        border: 1px solid #000;
+        -webkit-transition: all, .5s;
+        transition: all, .5s;
+
+        &:hover {
+          background: #000;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
 
 @media only screen and (max-width : 1199px) {
 

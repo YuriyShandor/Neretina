@@ -33,10 +33,11 @@ header {
 
 .header-nav_default {
   position: relative;
-  z-index: 10;
 }
 
 .header-nav_fixed {
+  background: #fff;
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
