@@ -606,88 +606,6 @@ header .header-block .neretina__logo {
   }
 }
 
-.articles {
-  display: -ms-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.articles .article {
-  width: 370px;
-  margin-top: 40px;
-}
-
-.articles .article__image {
-  width: 100%;
-  position: relative;
-}
-
-.articles .article__image img {
-  width: inherit;
-}
-
-.articles .article__image .article__category {
-  position: absolute;
-  left: 10px;
-  bottom: 20px;
-  padding: 5px 10px;
-  border: 1px solid #fff;
-  color: #fff;
-  font-size: 9px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.articles .article__info h1 {
-  font-family: Warnock;
-  font-size: 26px;
-  font-weight: 500;
-  color: #000;
-  margin: 20px 0;
-}
-
-.articles .article__info p {
-  font-size: 14px;
-  font-weight: 400;
-  color: #959595;
-}
-
-@media only screen and (max-width: 1199px) {
-  .articles .article {
-    width: 310px;
-    margin-top: 30px;
-  }
-}
-
-@media only screen and (max-width: 991px) {
-  .articles .article {
-    width: 350px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .articles .article {
-    width: 265px;
-    margin-top: 20px;
-  }
-}
-
-@media only screen and (max-width: 575px) {
-  .articles {
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-  }
-  .articles .article {
-    width: 90%;
-  }
-}
-
 footer {
   width: 100%;
   -webkit-box-shadow: 0 -7px 20px 0px #efeded;
@@ -751,112 +669,9 @@ footer .footer-block span a:hover {
   }
 }
 
-.article-heading__info-block h1 {
-  font-size: 80px;
-}
-
-.article-heading__info-block p {
-  width: 70%;
-}
-
-.article-heading__info-block .more-about-me {
-  margin-left: 100px;
-  margin-top: 40px;
-  width: 270px;
-  height: 60px;
-  display: -ms-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  color: #000;
-  background: #fff;
-  border: 1px solid #000;
-  -webkit-transition: all, .5s;
-  transition: all, .5s;
-}
-
-.article-heading__info-block .more-about-me:hover {
-  background: #000;
-  color: #fff;
-}
-
-.article-heading__info .neretina-socials {
-  display: -ms-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-}
-
-.article-heading__info .neretina-socials a {
-  margin-bottom: 35px;
-  color: #000;
-}
-
-.article-heading__info .neretina-socials a:last-child {
-  margin-bottom: 0;
-}
-
-@media only screen and (max-width: 1199px) {
-  .article-heading__info-block h1 {
-    font-size: 65px;
-  }
-}
-
-@media only screen and (max-width: 991px) {
-  .article-heading__info-block h1 {
-    font-size: 60px;
-  }
-  .article-heading__info-block p {
-    width: 80%;
-  }
-  .article-heading__info-block .more-about-me {
-    margin-left: 0px;
-    margin-top: 30px;
-    width: 210px;
-    height: 50px;
-  }
-  .article-heading__info .neretina-socials a {
-    margin-bottom: 25px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .article-heading__info-block h1 {
-    font-size: 46px;
-  }
-  .article-heading__info-block p {
-    width: 77%;
-  }
-  .article-heading__info-block .more-about-me {
-    margin-top: 25px;
-  }
-}
-
-@media only screen and (max-width: 575px) {
-  .article-heading__info-block h1 {
-    font-size: 36px;
-  }
-  .article-heading__info-block p {
-    width: 90%;
-  }
-}
-
-.new-on-site {
+.article-title {
   margin: 0;
+  margin-top: 50px;
   font-family: Warnock;
   font-size: 30px;
   font-weight: 500;
@@ -887,20 +702,16 @@ footer .footer-block span a:hover {
   margin-bottom: 7px;
 }
 
-@media only screen and (max-width: 991px) {
-  .new-on-site {
-    margin: 0 auto;
-  }
-}
-
 @media only screen and (max-width: 767px) {
-  .new-on-site {
+  .article-title {
     font-size: 26px;
+    margin-top: 30px;
   }
 }
 
 @media only screen and (max-width: 575px) {
-  .new-on-site {
+  .article-title {
     font-size: 24px;
+    margin-top: 25px;
   }
 }

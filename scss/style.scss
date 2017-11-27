@@ -4,6 +4,7 @@
 @import "./_components/_header.scss";
 @import "./_components/_neretina-form__mailing.scss";
 @import "./_components/_article-heading.scss";
+@import "./_components/_articles.scss";
 @import "./_components/_footer.scss";
 
 .article-heading {
@@ -98,7 +99,6 @@
         .more-about-me {
           margin-left: 0px;
           margin-top: 30px;
-          margin-bottom: 30px;
           width: 210px;
           height: 50px;
         }
@@ -127,13 +127,6 @@
 
         .more-about-me {
           margin-top: 25px;
-          margin-bottom: 30px;
-        }
-      }
-
-      .neretina-socials {
-        a {
-          margin-bottom: 25px;
         }
       }
     }
@@ -156,36 +149,59 @@
   }
 }
 
+.new-on-site {
+  margin: 0;
+  font-family: Warnock;
+  font-size: 30px;
+  font-weight: 500;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.more-articles__block {
+  a {
+    margin-top: 40px;
+    margin-bottom: 45px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d4d4d4;
+    -webkit-transition: all, .5s;
+    transition: all, .5s;
+
+    &:hover {
+      border-bottom: 1px solid #000;
+    }
+  }
+
+  img {
+    margin-left: 25px;
+    margin-bottom: 7px;
+  }
+}
+
 
 @media only screen and (max-width : 1199px) {
 
 }
 
 @media only screen and (max-width : 991px) {
-
+  .new-on-site {
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width : 767px) {
-
+  .new-on-site {
+    font-size: 26px;
+  }
 }
 
 @media only screen and (max-width : 575px) {
-
-}
-
-
-@media only screen and (max-width : 1199px) {
-
-}
-
-@media only screen and (max-width : 991px) {
-
-}
-
-@media only screen and (max-width : 767px) {
-
-}
-
-@media only screen and (max-width : 575px) {
-
+  .new-on-site {
+    font-size: 24px;
+  }
 }
