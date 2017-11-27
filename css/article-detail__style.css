@@ -428,6 +428,12 @@ header .header-block .neretina__logo {
   color: #fff;
   padding-left: 15px;
   padding-right: 30px;
+  -webkit-transition: all, .5s;
+  transition: all, .5s;
+}
+
+.article-socials .social:hover {
+  opacity: 0.8;
 }
 
 .article-socials .social span {
@@ -700,6 +706,83 @@ footer .footer-block span a:hover {
 .more-articles__block img {
   margin-left: 25px;
   margin-bottom: 7px;
+}
+
+.main-content {
+  border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 20px;
+}
+
+.main-content p {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+
+.main-content ol {
+  padding: 0;
+  margin-top: 15px;
+  font-family: Warnock;
+  font-size: 26px;
+  font-weight: 500;
+  color: #000;
+  list-style-type: none;
+}
+
+.main-content ol li {
+  padding-left: 60px;
+  font-family: Gotham;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 70px;
+  counter-increment: step-counter;
+}
+
+.main-content ol li:first-child {
+  margin-top: 35px;
+}
+
+.main-content ol li:last-child {
+  margin-bottom: 50px;
+}
+
+.main-content ol li::before {
+  content: counter(step-counter);
+  margin-left: -60px;
+  margin-right: 20px;
+  font-family: Warnock;
+  font-weight: 500;
+  font-size: 26px;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  padding: 1px 15px;
+  border-radius: 40px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .main-content ol li {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .main-content p {
+    margin-bottom: 20px;
+  }
+  .main-content ol li {
+    margin-bottom: 30px;
+    counter-increment: step-counter;
+  }
+  .main-content ol li:first-child {
+    margin-top: 25px;
+  }
+  .main-content ol li:last-child {
+    margin-bottom: 20px;
+  }
 }
 
 @media only screen and (max-width: 767px) {

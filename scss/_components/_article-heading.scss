@@ -94,6 +94,12 @@
     color: #fff;
     padding-left: 15px;
     padding-right: 30px;
+    -webkit-transition: all, .5s;
+    transition: all, .5s;
+
+    &:hover {
+      opacity: 0.8;
+    }
 
     span {
       margin-bottom: 0;
@@ -213,7 +219,7 @@
         span {
           margin-bottom: 10px;
         }
-        
+
         h1 {
           font-size: 32px;
         }
