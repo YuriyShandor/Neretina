@@ -1,5 +1,3 @@
-@import "./_nav-bar.scss";
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -19,6 +17,8 @@ body {
           flex-direction: column;
 }
 
+@import "./_nav-bar.scss";
+
 header {
   width: 100%;
   -webkit-box-shadow: 0 0px 75px 0px #efeded;
@@ -29,10 +29,6 @@ header {
       display: none;
     }
   }
-}
-
-.header-nav_default {
-  position: relative;
 }
 
 .header-nav_fixed {

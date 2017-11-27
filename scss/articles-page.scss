@@ -2,8 +2,8 @@
 
 @import "./_components/_fonts.scss";
 @import "./_components/_header.scss";
-@import "./_components/_neretina-form__mailing.scss";
 @import "./_components/_articles.scss";
+@import "./_components/_neretina-form__mailing.scss";
 @import "./_components/_footer.scss";
 
 .active-item {
@@ -23,13 +23,14 @@
 }
 
 .more-articles__block {
-  a {
+  div {
     margin-top: 40px;
     margin-bottom: 45px;
     font-size: 14px;
     font-weight: 700;
     color: #000;
     text-decoration: none;
+    cursor: pointer;
     text-transform: uppercase;
     border-bottom: 1px solid #d4d4d4;
     -webkit-transition: all, .5s;

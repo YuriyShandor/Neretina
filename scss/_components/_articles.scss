@@ -49,6 +49,14 @@
         color: #959595;
       }
     }
+
+    &:hover {
+      .article__info {
+        h1 {
+          text-decoration: underline;
+        }
+      }
+    }
   }
 }
 
