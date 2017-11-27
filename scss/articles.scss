@@ -1,0 +1,114 @@
+// to compile...
+
+@import "./_components/_fonts.scss";
+@import "./_components/_header.scss";
+@import "./_components/_neretina-form__mailing.scss";
+@import "./_components/_articles.scss";
+@import "./_components/_footer.scss";
+
+.active-item {
+  color: #959595 !important;
+}
+
+.section-title {
+  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-family: Warnock;
+  font-size: 30px;
+  font-weight: 500;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.more-articles__block {
+  a {
+    margin-top: 40px;
+    margin-bottom: 45px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d4d4d4;
+    -webkit-transition: all, .5s;
+    transition: all, .5s;
+
+    &:hover {
+      border-bottom: 1px solid #000;
+    }
+  }
+
+  img {
+    margin-left: 10px;
+    margin-bottom: 7px;
+  }
+}
+
+.articles-categories {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+
+  .article-category {
+    padding: 6px 9px;
+    border: 1px solid #000;
+    font-size: 9px;
+    font-weight: 400;
+    color: #000;
+    text-transform: uppercase;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    -webkit-transition: all, .5s;
+    transition: all, .5s;
+
+    &:hover {
+      background: lighten(#959595, 20%);
+    }
+  }
+}
+
+.article-category_active {
+  background: #000;
+  color: #fff !important;
+}
+
+.article_hidden {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+  .section-title {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  .section-title {
+    font-size: 26px;
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width : 575px) {
+  .section-title {
+    font-size: 24px;
+  }
+}
