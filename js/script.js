@@ -38,13 +38,13 @@ $(document).ready(function() {
       $('.article').addClass('article_hidden');
       $(`.article${item}`).removeClass('article_hidden');
 
-      // var ToShow = 9;
-      // $('.article').addClass('article_hidden');
-      // $(`.article${item}`).slice(0, ToShow).removeClass('article_hidden');
-      // $('#loadMore').click(function () {
-      //   ToShow = ToShow +3;
-      //   $(`.article${item}`).slice(0, ToShow).removeClass('article_hidden');
-      // });
+      var ToShow = 9;
+      $('.article').addClass('article_hidden');
+      $(`.article${item}`).slice(0, ToShow).removeClass('article_hidden');
+      $('#loadMore').click(function () {
+        ToShow = ToShow +3;
+        $(`.article${item}`).slice(0, ToShow).removeClass('article_hidden');
+      });
     });
   });
 });
