@@ -12,29 +12,39 @@ $(document).ready(function() {
     $('.nav-bar').slideToggle('0.5s');
   });
 
-  var products = ['people', 'bussines', 'education', 'life-style'];
+  var products = ['__people', '__bussines', '__education', '__life-style'];
+
+  // var articleToShow = 9;
+  // $('.article').hide().slice(0, articleToShow).show();
+  // $('#loadMore').click(function () {
+  //   articleToShow = articleToShow +3;
+  //   $('.article').hide().slice(0, articleToShow).show();
+  // });
+  //
+  // var toShow = 9;
 
   var articleToShow = 9;
-    $('.article').hide().slice(0, articleToShow).show();
-    $('#loadMore').click(function () {
-      articleToShow = articleToShow +3;
-      $('.article').hide().slice(0, articleToShow).show();
+  $('.article').addClass('article_hidden');
+  $('.article').slice(0, articleToShow).removeClass('article_hidden');
+  $('#loadMore').click(function () {
+    articleToShow = articleToShow +3;
+    $('.article').slice(0, articleToShow).removeClass('article_hidden');
   });
 
-  var toShow = 9;
-
   products.forEach(function(item) {
-    $(`.article-category__${item}`).click(function(){
+    $(`.article-category${item}`).click(function(){
       $('.article-category').removeClass('article-category_active');
       $(this).addClass('article-category_active');
       $('.article').addClass('article_hidden');
-      $(`.article__${item}`).removeClass('article_hidden');
+      $(`.article${item}`).removeClass('article_hidden');
 
-      $(`.article__${item}`).hide().slice(0, toShow).show();
-      $('#loadMore').click(function () {
-        toShow = toShow +3;
-        $(`.article__${item}`).hide().slice(0, toShow).show();
-      });
+      // var ToShow = 9;
+      // $('.article').addClass('article_hidden');
+      // $(`.article${item}`).slice(0, ToShow).removeClass('article_hidden');
+      // $('#loadMore').click(function () {
+      //   ToShow = ToShow +3;
+      //   $(`.article${item}`).slice(0, ToShow).removeClass('article_hidden');
+      // });
     });
   });
 });
