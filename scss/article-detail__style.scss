@@ -6,13 +6,21 @@
 @import "./_components/_neretina-form__mailing.scss";
 @import "./_components/_footer.scss";
 
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+    max-width: 100%;
+  }
+}
+
 .active-item {
   color: #959595 !important;
 }
 
 .article-title {
   margin: 0;
-  margin-top: 50px;
+  margin-top: 141px;
+  margin-bottom: 50px;
   font-family: Warnock;
   font-size: 30px;
   font-weight: 500;
@@ -156,6 +164,11 @@
 }
 
 @media only screen and (max-width : 991px) {
+  .article-title {
+    margin-top: 125px;
+    margin-bottom: 30px;
+  }
+
   .main-content {
     p {
       margin-bottom: 20px;
@@ -205,7 +218,8 @@
 @media only screen and (max-width : 767px) {
   .article-title {
     font-size: 26px;
-    margin-top: 30px;
+    margin-top: 120px;
+    margin-bottom: 25px;
   }
 
   .other-article {
@@ -242,6 +256,6 @@
 @media only screen and (max-width : 575px) {
   .article-title {
     font-size: 24px;
-    margin-top: 25px;
+    margin-top: 115px;
   }
 }

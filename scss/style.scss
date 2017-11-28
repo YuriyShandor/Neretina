@@ -7,7 +7,16 @@
 @import "./_components/_neretina-form__mailing.scss";
 @import "./_components/_footer.scss";
 
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+    max-width: 100%;
+  }
+}
+
 .article-heading {
+  margin-top: 142px;
+
   &__info {
     &-block {
       h1 {
@@ -86,6 +95,7 @@
 
 @media only screen and (max-width : 991px) {
   .article-heading {
+    margin-top: 125px;
     &__info {
       &-block {
         h1 {

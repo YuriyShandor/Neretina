@@ -49,6 +49,8 @@ body {
 .header-nav {
   width: 100%;
   height: 92px;
+  -webkit-transition: all, .5s;
+  transition: all, .5s;
 }
 
 .header-nav .toggler-icon {
@@ -166,8 +168,15 @@ body {
 
 header {
   width: 100%;
-  -webkit-box-shadow: 0 0px 75px 0px #efeded;
-  box-shadow: 0 0px 75px 0px #efeded;
+  -webkit-box-shadow: 15px 0 175px -15px #efeded;
+  box-shadow: 15px 0 175px -15px #efeded;
+  position: fixed;
+  background: #fff;
+  z-index: 100;
+}
+
+header .header-block {
+  width: inherit;
 }
 
 header .header-block .neretina__logo {
@@ -175,14 +184,6 @@ header .header-block .neretina__logo {
 }
 
 .header-nav_fixed {
-  background: #fff;
-  z-index: 100;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 0 50px;
-  -webkit-box-shadow: 0 0px 75px 0px #efeded;
-  box-shadow: 0 0px 75px 0px #efeded;
   height: 73.6px;
 }
 
@@ -191,23 +192,11 @@ header .header-block .neretina__logo {
     display: inline-block;
     margin-left: 20px;
   }
-  .header-nav_fixed {
-    padding: 0 30px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .header-nav_fixed {
-    padding: 0 20px;
-  }
 }
 
 @media only screen and (max-width: 575px) {
   header .header-block .neretina__logo {
     width: 125px;
-  }
-  .header-nav_fixed {
-    padding: 0 0px;
   }
 }
 
@@ -478,13 +467,20 @@ footer .footer-block span a:hover {
   }
 }
 
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+    max-width: 100%;
+  }
+}
+
 .active-item {
   color: #959595 !important;
 }
 
 .section-title {
   margin: 0;
-  margin-top: 50px;
+  margin-top: 141px;
   margin-bottom: 10px;
   font-family: Warnock;
   font-size: 30px;
@@ -563,14 +559,14 @@ footer .footer-block span a:hover {
 
 @media only screen and (max-width: 991px) {
   .section-title {
-    margin-top: 30px;
+    margin-top: 120px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .section-title {
     font-size: 26px;
-    margin-top: 25px;
+    margin-top: 115px;
   }
 }
 

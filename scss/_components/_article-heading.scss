@@ -1,5 +1,4 @@
 .article-heading {
-  margin-top: 50px;
   margin-bottom: 45px;
   display: -ms-flex;
   display: -webkit-box;
@@ -190,7 +189,6 @@
 
 @media only screen and (max-width : 991px) {
   .article-heading {
-    margin-top: 30px;
     margin-bottom: 30px;
     display: -ms-flex;
     display: -webkit-box;
@@ -257,7 +255,6 @@
 
 @media only screen and (max-width : 767px) {
   .article-heading {
-    margin-top: 30px;
     margin-bottom: 25px;
 
     &__info {

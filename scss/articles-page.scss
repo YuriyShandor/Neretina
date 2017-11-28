@@ -6,13 +6,20 @@
 @import "./_components/_neretina-form__mailing.scss";
 @import "./_components/_footer.scss";
 
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+    max-width: 100%;
+  }
+}
+
 .active-item {
   color: #959595 !important;
 }
 
 .section-title {
   margin: 0;
-  margin-top: 50px;
+  margin-top: 141px;
   margin-bottom: 10px;
   font-family: Warnock;
   font-size: 30px;
@@ -97,14 +104,14 @@
 
 @media only screen and (max-width : 991px) {
   .section-title {
-    margin-top: 30px;
+    margin-top: 120px;
   }
 }
 
 @media only screen and (max-width : 767px) {
   .section-title {
     font-size: 26px;
-    margin-top: 25px;
+    margin-top: 115px;
   }
 }
 

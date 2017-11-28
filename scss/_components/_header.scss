@@ -21,10 +21,14 @@ body {
 
 header {
   width: 100%;
-  -webkit-box-shadow: 0 0px 75px 0px #efeded;
-          box-shadow: 0 0px 75px 0px #efeded;
+  -webkit-box-shadow: 15px 0 175px -15px #efeded;
+          box-shadow: 15px 0 175px -15px #efeded;
+  position: fixed;
+  background: #fff;
+  z-index: 100;
 
   .header-block {
+    width: inherit;
     .neretina__logo {
       display: none;
     }
@@ -32,14 +36,6 @@ header {
 }
 
 .header-nav_fixed {
-  background: #fff;
-  z-index: 100;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 0 50px;
-  -webkit-box-shadow: 0 0px 75px 0px #efeded;
-          box-shadow: 0 0px 75px 0px #efeded;
   height: 92px * 0.8;
 }
 
@@ -56,16 +52,10 @@ header {
       }
     }
   }
-
-  .header-nav_fixed {
-    padding: 0 30px;
-  }
 }
 
 @media only screen and (max-width : 767px) {
-  .header-nav_fixed {
-    padding: 0 20px;
-  }
+
 }
 
 @media only screen and (max-width : 575px) {
@@ -77,7 +67,7 @@ header {
     }
   }
 
-  .header-nav_fixed {
-    padding: 0 0px;
-  }
+  // .header-nav_fixed {
+  //   padding: 0 0px;
+  // }
 }
