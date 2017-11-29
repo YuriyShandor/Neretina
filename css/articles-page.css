@@ -382,11 +382,15 @@ header .header-block .neretina__logo {
 
 @media only screen and (max-width: 576px) {
   .neretina-form {
+    width: 90%;
     padding: 35px 0;
     margin-bottom: 35px;
   }
+  .neretina-form .neretina-form-title {
+    padding: 0;
+  }
   .neretina-form h1 {
-    font-size: 18px;
+    font-size: 17px;
   }
   .neretina-form__mailing {
     -webkit-box-pack: center;
@@ -571,7 +575,25 @@ footer .footer-block span a:hover {
 }
 
 @media only screen and (max-width: 575px) {
+  .section-title__block {
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start !important;
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
+  }
   .section-title {
     font-size: 24px;
+    margin-left: 15px;
+    margin-bottom: 40px;
+  }
+  .articles-categories {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding: 0 10px;
+    margin-bottom: 30px;
   }
 }

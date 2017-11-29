@@ -32,13 +32,6 @@ $(document).ready(function() {
       $('#loadMore').click(function () {
         // Код програмiста
       })
-      // var ToShow = 9;
-      // $('.article').addClass('article_hidden');
-      // $(`.article${item}`).slice(0, ToShow).removeClass('article_hidden');
-      // $('#loadMore').click(function () {
-      //   ToShow = ToShow +3;
-      //   $(`.article${item}`).slice(0, ToShow).removeClass('article_hidden');
-      // });
     });
   });
 });

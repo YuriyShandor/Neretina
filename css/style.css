@@ -242,7 +242,7 @@ header .header-block .neretina__logo {
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  margin-bottom: 5px;
+  margin-bottom: 18px;
 }
 
 .article-heading__info-block h1 {
@@ -250,7 +250,7 @@ header .header-block .neretina__logo {
   font-family: Warnock;
   font-size: 44px;
   font-weight: 400;
-  margin-bottom: 8px;
+  margin-bottom: 19px;
 }
 
 .article-heading__info-block .divider {
@@ -261,7 +261,7 @@ header .header-block .neretina__logo {
 
 .article-heading__info-block p {
   margin: 0;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 100px;
   font-size: 24px;
   font-weight: 400;
@@ -405,10 +405,11 @@ header .header-block .neretina__logo {
   }
   .article-heading__info-block h1 {
     font-size: 32px;
+    margin-bottom: 50px;
   }
   .article-heading__info-block p {
     margin-left: 0;
-    margin-top: 20px;
+    margin-top: 50px;
     font-size: 18px;
   }
   .article-socials {
@@ -659,11 +660,15 @@ header .header-block .neretina__logo {
 
 @media only screen and (max-width: 576px) {
   .neretina-form {
+    width: 90%;
     padding: 35px 0;
     margin-bottom: 35px;
   }
+  .neretina-form .neretina-form-title {
+    padding: 0;
+  }
   .neretina-form h1 {
-    font-size: 18px;
+    font-size: 17px;
   }
   .neretina-form__mailing {
     -webkit-box-pack: center;
@@ -896,18 +901,20 @@ footer .footer-block span a:hover {
 
 @media only screen and (max-width: 991px) {
   .new-on-site {
-    margin: 0 auto;
+    margin-left: 80px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .new-on-site {
     font-size: 26px;
+    margin-left: 50px;
   }
 }
 
 @media only screen and (max-width: 575px) {
   .new-on-site {
     font-size: 24px;
+    margin-left: 15px;
   }
 }

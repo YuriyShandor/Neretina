@@ -200,18 +200,20 @@
 
 @media only screen and (max-width : 991px) {
   .new-on-site {
-    margin: 0 auto;
+    margin-left: 80px;
   }
 }
 
 @media only screen and (max-width : 767px) {
   .new-on-site {
     font-size: 26px;
+    margin-left: 50px;
   }
 }
 
 @media only screen and (max-width : 575px) {
   .new-on-site {
     font-size: 24px;
+    margin-left: 15px;
   }
 }
